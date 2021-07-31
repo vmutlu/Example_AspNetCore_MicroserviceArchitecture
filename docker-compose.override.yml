@@ -22,12 +22,4 @@ services:
         - "1072:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-
-
-  microservice.apigateway:
-    container_name: apigateway
-    ports:
-        - "4000:80"
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-
+      

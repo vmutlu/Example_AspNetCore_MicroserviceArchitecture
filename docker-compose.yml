@@ -19,11 +19,3 @@ services:
     build:
       context: .
       dockerfile: Microservice.Product.API/Dockerfile
-
-
-  microservice.apigateway:
-    image: ${DOCKER_REGISTRY-}microserviceapigateway
-    build:
-      context: .
-      dockerfile: Microservice.APIGateway/Dockerfile
-
