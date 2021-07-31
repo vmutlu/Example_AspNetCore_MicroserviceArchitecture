@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  microservice.auth.api:
+    image: ${DOCKER_REGISTRY-}microserviceauthapi
+    build:
+      context: .
+      dockerfile: Microservice.Auth.API/Dockerfile
+
+  microservice.customer.api:
+    image: ${DOCKER_REGISTRY-}microservicecustomerapi
+    build:
+      context: .
+      dockerfile: Microservice.Customer.API/Dockerfile
+
+
+  microservice.product.api:
+    image: ${DOCKER_REGISTRY-}microserviceproductapi
+    build:
+      context: .
+      dockerfile: Microservice.Product.API/Dockerfile
+
+
+  microservice.apigateway:
+    image: ${DOCKER_REGISTRY-}microserviceapigateway
+    build:
+      context: .
+      dockerfile: Microservice.APIGateway/Dockerfile
+

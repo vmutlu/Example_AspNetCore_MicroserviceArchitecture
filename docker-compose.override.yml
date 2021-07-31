@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  microservice.auth.api:
+    container_name: authapi
+    ports:
+        - "1073:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  microservice.customer.api:
+    container_name: customerapi
+    ports:
+        - "1071:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+
+  microservice.product.api:
+    container_name: productapi
+    ports:
+        - "1072:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+
+  microservice.apigateway:
+    container_name: apigateway
+    ports:
+        - "4000:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+

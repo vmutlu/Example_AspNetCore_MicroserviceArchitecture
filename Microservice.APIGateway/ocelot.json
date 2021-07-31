@@ -6,7 +6,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "127.0.0.1",
-          "Port": 1025
+          "Port": 1072
         }
       ],
       "UpstreamPathTemplate": "/api/products",
@@ -22,7 +22,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "127.0.0.1",
-          "Port": 2000
+          "Port": 1071
         }
       ],
       "UpstreamPathTemplate": "/api/customers",
@@ -38,7 +38,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "127.0.0.1",
-          "Port": 3000
+          "Port": 1073
         }
       ],
       "UpstreamPathTemplate": "/api/auths",
